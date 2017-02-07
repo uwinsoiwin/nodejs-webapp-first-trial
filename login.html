@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Login</title>
+<link rel="stylesheet" href="css/style.css">
+<script type="text/javascript" src="js/code.js"></script>
+<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+</head>
+<body onload="user_id.focus();">
+<center>
+	<div class="container">
+	<center>
+		<h1>Login</h1>
+		<div class="email-div">
+			<input type="text" id="user_id" class="email" name="user_id" autocomplete="off"	 placeholder="User ID" onkeydown="integer_entry(this, event);" onkeypress="move_to_pass(this,event);"></input>
+		</div>
+		<div class="space"></div>
+		<div class="password-div">
+			<input type="password" id="password" class="pass" name="password" placeholder="Password" onkeypress="move_to_sbubmit(this,event);"></input>	
+		</div>
+		<div class="space-plus"></div>
+		<button type="submit" name="submit" class="btnSubmit" id="submit" value="Submit" onclick="post_values();">login</button>
+		<div class="space"></div>
+		<a href="#">Forgot Password?</a>
+	</center>
+	</div>
+</center>
+</body>
+</html>
